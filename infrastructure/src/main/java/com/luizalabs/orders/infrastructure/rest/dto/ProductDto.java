@@ -2,7 +2,6 @@ package com.luizalabs.orders.infrastructure.rest.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.luizalabs.orders.domain.product.Product;
-import com.luizalabs.orders.infrastructure.jpa.entity.ProductEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

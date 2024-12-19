@@ -3,7 +3,6 @@ package com.luizalabs.orders.infrastructure.repositories;
 import com.luizalabs.orders.domain.order.Order;
 import com.luizalabs.orders.domain.order.OrderRepository;
 import com.luizalabs.orders.infrastructure.jpa.entity.OrderEntity;
-import com.luizalabs.orders.infrastructure.jpa.entity.UserOrderEntity;
 import com.luizalabs.orders.infrastructure.jpa.repositories.OrderJpaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

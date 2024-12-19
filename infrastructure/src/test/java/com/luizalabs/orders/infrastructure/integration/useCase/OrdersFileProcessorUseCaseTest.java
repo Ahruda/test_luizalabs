@@ -24,7 +24,7 @@ public class OrdersFileProcessorUseCaseTest extends IntegrationTest {
 
     @Test
     @DisplayName("Should be process one order with two products and save them in the database")
-    void processOneOrderWithTwoProducts() throws Exception {
+    void processOneOrderWithTwoProducts() {
         String fileContent =
                 "0000000070                              Palmer Prosacco00000007530000000003     1836.7420210308\n"+
                 "0000000070                              Palmer Prosacco00000007530000000004     1009.5420210308";

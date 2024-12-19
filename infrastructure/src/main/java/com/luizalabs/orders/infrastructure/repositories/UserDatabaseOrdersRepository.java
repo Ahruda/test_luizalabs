@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
-public class UserDatabaseOrdersRepository implements UserOrdersRepository { //todo fechar e abrir IDE para arrumar import
+public class UserDatabaseOrdersRepository implements UserOrdersRepository {
 
     private final UserOrderJpaRepository userOrderJpaRepository;
 

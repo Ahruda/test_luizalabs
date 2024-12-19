@@ -2,7 +2,6 @@ package com.luizalabs.orders.infrastructure.unit;
 
 import com.luizalabs.orders.application.file.OrdersFileProcessorUseCase;
 import com.luizalabs.orders.domain.exception.FileInvalidException;
-import com.luizalabs.orders.domain.exception.OrderNotFoundException;
 import com.luizalabs.orders.domain.order.Order;
 import com.luizalabs.orders.domain.product.Product;
 import com.luizalabs.orders.domain.user.UserOrder;
@@ -134,7 +133,7 @@ public class OrdersFileProcessorUseCaseTest {
 
     @Test
     @DisplayName("Should be throw exception when file is invalid")
-    void throwExceptionWhenFileIsInvalid() throws Exception {
+    void throwExceptionWhenFileIsInvalid() {
         MultipartFile file = mock(MultipartFile.class);
         when(file.getContentType()).thenReturn("application/json");
 
