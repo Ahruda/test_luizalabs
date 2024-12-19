@@ -33,3 +33,10 @@ http://localhost:8080/swagger-ui/index.html
 
 Code Coverage reports: in path
 orders/build/reports/jacoco/test/index.html
+
+
+## Workflow
+![](img/luizaDiagram.png)
+
+## Database
+![](img/luizaDatabase.png)
