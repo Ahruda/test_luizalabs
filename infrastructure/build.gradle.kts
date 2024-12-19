@@ -24,7 +24,6 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-
 tasks.bootJar {
     archiveBaseName.set("app")
     destinationDirectory.set(file("$rootDir/build/libs"))
