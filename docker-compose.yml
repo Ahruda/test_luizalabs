@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  insurance-api:
+  order-api:
     build:
       dockerfile: ./Dockerfile
       context: .
