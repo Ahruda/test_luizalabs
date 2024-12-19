@@ -22,7 +22,7 @@ public class GetOrdersBetweenDatesUseCase implements UseCase<GetOrdersBetweenDat
 
     @Override
     public Output execute(Input input) {
-        log.info("I=Starting_execution c=GetOrdersBetweenDatesUseCase m=execute");
+        log.info("I=Starting_execution c=GetOrdersBetweenDatesUseCase m=execute startDate={} endDate={}", input.startDate(), input.endDate());
 
         var orders = orderRepository.findOrdersBetweenDates(input.startDate, input.endDate);
 

@@ -19,7 +19,7 @@ public class GetOrdersByOrderIdUseCase implements UseCase<GetOrdersByOrderIdUseC
     }
 
     public Output execute(Input input) {
-        log.info("I=Starting_execution c=GetOrdersByOrderIdUseCase m=execute");
+        log.info("I=Starting_execution c=GetOrdersByOrderIdUseCase m=execute orderId={}", input.id());
 
         return orderRepository.findById(input.id)
                 .flatMap(order -> userOrdersRepository.findUserByOrderId(order.getOrderId())
