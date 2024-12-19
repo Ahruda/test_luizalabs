@@ -8,14 +8,6 @@ plugins {
 
 group = "com.luizalabs.orders.infrastructure"
 
-tasks.bootJar {
-    archiveBaseName.set("app")
-    destinationDirectory.set(file("$rootDir/build/libs"))
-
-    dependsOn(tasks.named("test"))
-    finalizedBy(tasks.named("jacocoTestReport"))
-}
-
 dependencies {
     implementation(project(":application"))
     implementation(project(":domain"))
@@ -30,6 +22,15 @@ dependencies {
     runtimeOnly("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+
+tasks.bootJar {
+    archiveBaseName.set("app")
+    destinationDirectory.set(file("$rootDir/build/libs"))
+
+    dependsOn(tasks.named("test"))
+    finalizedBy(tasks.named("jacocoTestReport"))
 }
 
 tasks.testCodeCoverageReport {
